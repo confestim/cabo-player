@@ -5,3 +5,5 @@ It is supposed to simulate a run of the game, just to see what the optimal playe
 
 
 <sub>This is definitely not me trying to get a competitive edge when at parties....</sub>
+
+![Cards](https://pngimg.com/uploads/cards/cards_PNG8489.png)
