@@ -1,6 +1,7 @@
 import random
 
 # Deck generation
+# How come are there no ACES?????
 names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
 suits = ["Spades", "Hearts", "Clubs", "Diamonds"]
 specials = ["peek", "swap", "draw"]
