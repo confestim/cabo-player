@@ -34,6 +34,7 @@ def get_card():
     except IndexError:
         raise Exception("End of deck")
 
+# Player class
 class Player:
     # Get player hands
     def __init__(self):
@@ -43,7 +44,8 @@ class Player:
             self.cards[i] = get_card()
         print("Left: " + self.cards[0] + " Right: " + self.cards[3])
 
-    # Peek something you haven't
+    # Take a peek at something you haven't before(not quite)
+    # ^^^ TODO: Do what the comment says ^^^
     def peek(self):
         print(self.cards[self.idx])
         self.idx += 1
@@ -52,9 +54,11 @@ class Player:
 
 # Do stuff in case of card draws
 def check(drawn, player):
+    # TODO: Add all special cases
     if drawn in specials:
         if drawn == "peek":
             player.peek()
+    # NOTE: Maybe we should disregard this basic strategy and try to implement the rules of the game better
     else:
         if drawn < player.cards[0] or (player.cards[0] in specials and drawn not in specials):
             player.cards[0] = drawn
